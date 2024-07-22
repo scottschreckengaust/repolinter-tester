@@ -1,0 +1,11 @@
+name: main
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: main
+        id: main
+        run: echo "Hello ${USER:-''}"
